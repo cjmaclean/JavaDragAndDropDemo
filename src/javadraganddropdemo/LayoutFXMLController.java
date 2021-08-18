@@ -16,6 +16,9 @@ import javafx.scene.control.Label;
  * FXML Controller class
  *
  * @author 30039802
+ * 
+ * Unmodified from example JavaFX program so far.
+ * 
  */
 public class LayoutFXMLController implements Initializable {
 
