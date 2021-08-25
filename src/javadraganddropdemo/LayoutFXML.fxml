@@ -1,16 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javadraganddropdemo.LayoutFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javadraganddropdemo.LayoutFXMLController">
     <children>
-        <Button layoutX="50" layoutY="90" text="Click Me!" onAction="#handleButtonAction"
-                fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="610.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Quit">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Undo">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Z" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Redo">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Y" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Help">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="F1" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="About TODO App" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="165.0" layoutY="94.0" text="Tasks">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="milkLabel" layoutX="165.0" layoutY="136.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Buy milk" />
+      <Label fx:id="dishesLabel" layoutX="165.0" layoutY="167.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Do dishes" />
+      <Label fx:id="takeLabel" layoutX="165.0" layoutY="198.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Take out the rubbish bin" />
+      <Label fx:id="bringLabel" layoutX="165.0" layoutY="231.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Bring in the rubbish bin" />
+      <Label layoutX="381.0" layoutY="94.0" text="To do">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="todoLabel1" layoutX="383.0" layoutY="136.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel2" layoutX="382.0" layoutY="167.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel3" layoutX="382.0" layoutY="198.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel4" layoutX="382.0" layoutY="231.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel5" layoutX="382.0" layoutY="267.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
 
     </children>
 </AnchorPane>
