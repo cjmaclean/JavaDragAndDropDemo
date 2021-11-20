@@ -52,22 +52,7 @@ public class LayoutFXMLController implements Initializable {
 
 
 
-    @FXML
-    private void handleMilkDrag(MouseEvent event) {
 
-        Label sourceLabel = null;
-        if (event.getSource() instanceof Label) {
-            sourceLabel = (Label) (event.getSource());
-            System.out.println("You dragged me!");
-
-            Dragboard db = sourceLabel.startDragAndDrop(TransferMode.MOVE);
-            ClipboardContent cbContent = new ClipboardContent();
-            cbContent.putString(sourceLabel.getText());
-            db.setContent(cbContent);
-        }
-
-        event.consume();
-    }
     @FXML
     private void handleTaskDrag(MouseEvent event) {
 
@@ -130,19 +115,7 @@ public class LayoutFXMLController implements Initializable {
         }
     }
 
-    @FXML
-    void handleMilkDragDone(DragEvent event) {
-        System.out.println("drag done!");
 
-        if (event.getTransferMode() == TransferMode.MOVE) {
-            Label sourceLabel = null;
-            if (event.getSource() instanceof Label) {
-                sourceLabel = (Label) (event.getSource());
-                sourceLabel.setText("________");
-            }
-        }
-
-    }
     @FXML
     void handleTaskDragDone(DragEvent event) {
         System.out.println("drag done!");
