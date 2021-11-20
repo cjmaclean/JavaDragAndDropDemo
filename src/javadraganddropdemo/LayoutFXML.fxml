@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -48,30 +50,34 @@
             </Menu>
          </menus>
       </MenuBar>
-      <Label layoutX="165.0" layoutY="94.0" text="Tasks">
+      <Label layoutX="261.0" layoutY="94.0" text="Tasks">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="milkLabel" layoutX="165.0" layoutY="136.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Buy milk" />
-      <Label fx:id="dishesLabel" layoutX="165.0" layoutY="167.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Do the dishes" />
-      <Label fx:id="takeLabel" layoutX="165.0" layoutY="198.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Take out the rubbish bin" />
-      <Label fx:id="bringLabel" layoutX="165.0" layoutY="231.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Bring in the rubbish bin" />
-      <Label layoutX="381.0" layoutY="94.0" text="To do">
+      <Label fx:id="milkLabel" layoutX="261.0" layoutY="136.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Buy milk" />
+      <Label fx:id="dishesLabel" layoutX="261.0" layoutY="167.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Do the dishes" />
+      <Label fx:id="takeLabel" layoutX="261.0" layoutY="198.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Take out the rubbish bin" />
+      <Label fx:id="bringLabel" layoutX="261.0" layoutY="231.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Bring in the rubbish bin" />
+      <Label layoutX="477.0" layoutY="94.0" text="To do">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="todoLabel1" layoutX="383.0" layoutY="136.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <Label fx:id="todoLabel2" layoutX="382.0" layoutY="167.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <Label fx:id="todoLabel3" layoutX="382.0" layoutY="198.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <Label fx:id="todoLabel4" layoutX="382.0" layoutY="231.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <Label fx:id="todoLabel5" layoutX="382.0" layoutY="267.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <CheckBox layoutX="362.0" layoutY="136.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="167.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="198.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="231.0" mnemonicParsing="false" />
-      <CheckBox layoutX="362.0" layoutY="267.0" mnemonicParsing="false" />
+      <Label fx:id="todoLabel1" layoutX="479.0" layoutY="136.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel2" layoutX="478.0" layoutY="167.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel3" layoutX="478.0" layoutY="198.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel4" layoutX="478.0" layoutY="231.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel5" layoutX="478.0" layoutY="267.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <CheckBox layoutX="458.0" layoutY="136.0" mnemonicParsing="false" />
+      <CheckBox layoutX="458.0" layoutY="167.0" mnemonicParsing="false" />
+      <CheckBox layoutX="458.0" layoutY="198.0" mnemonicParsing="false" />
+      <CheckBox layoutX="458.0" layoutY="231.0" mnemonicParsing="false" />
+      <CheckBox layoutX="458.0" layoutY="267.0" mnemonicParsing="false" />
+      <ImageView fitHeight="128.0" fitWidth="128.0" layoutX="63.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/4177608_clipboard_list_todo_icon_128.png" />
+         </image></ImageView>
 
     </children>
 </AnchorPane>
