@@ -5,6 +5,9 @@
  */
 package javadraganddropdemo;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -55,6 +58,32 @@ public class LayoutFXMLController implements Initializable {
     @FXML
     private void handleQuit(ActionEvent event) {
         System.exit(0);
+    }
+    
+    @FXML
+    private void handleAbout(ActionEvent event) {
+        String aboutFileString = "about.pdf";
+        if (Desktop.isDesktopSupported()) {
+            try {
+                File aboutFile = new File(aboutFileString);
+                Desktop.getDesktop().open(aboutFile);
+            } catch (IOException ex) {
+                // no application registered for PDFs
+            }
+        }
+    }
+    
+    @FXML
+    private void handleHelp(ActionEvent event) {
+        String helpFileString = "help.pdf";
+        if (Desktop.isDesktopSupported()) {
+            try {
+                File helpFile = new File(helpFileString);
+                Desktop.getDesktop().open(helpFile);
+            } catch (IOException ex) {
+                // no application registered for PDFs
+            }
+        }
     }
     
     @FXML
