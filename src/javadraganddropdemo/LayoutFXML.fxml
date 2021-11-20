@@ -50,11 +50,11 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="todoLabel1" layoutX="479.0" layoutY="136.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <Label fx:id="todoLabel2" layoutX="478.0" layoutY="167.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <Label fx:id="todoLabel3" layoutX="478.0" layoutY="198.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <Label fx:id="todoLabel4" layoutX="478.0" layoutY="231.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
-      <Label fx:id="todoLabel5" layoutX="478.0" layoutY="267.0" onDragDropped="#handleDroppedOn1" onDragOver="#handleDragOver1" text="________" />
+      <Label fx:id="todoLabel1" layoutX="479.0" layoutY="136.0" onDragDropped="#handleDroppedOnToDoItem" onDragOver="#handleDragOverToDoItem" text="________" />
+      <Label fx:id="todoLabel2" layoutX="478.0" layoutY="167.0" onDragDropped="#handleDroppedOnToDoItem" onDragOver="#handleDragOverToDoItem" text="________" />
+      <Label fx:id="todoLabel3" layoutX="478.0" layoutY="198.0" onDragDropped="#handleDroppedOnToDoItem" onDragOver="#handleDragOverToDoItem" text="________" />
+      <Label fx:id="todoLabel4" layoutX="478.0" layoutY="231.0" onDragDropped="#handleDroppedOnToDoItem" onDragOver="#handleDragOverToDoItem" text="________" />
+      <Label fx:id="todoLabel5" layoutX="478.0" layoutY="267.0" onDragDropped="#handleDroppedOnToDoItem" onDragOver="#handleDragOverToDoItem" text="________" />
       <CheckBox layoutX="458.0" layoutY="136.0" mnemonicParsing="false" />
       <CheckBox layoutX="458.0" layoutY="167.0" mnemonicParsing="false" />
       <CheckBox layoutX="458.0" layoutY="198.0" mnemonicParsing="false" />

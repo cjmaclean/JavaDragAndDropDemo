@@ -71,7 +71,7 @@ public class LayoutFXMLController implements Initializable {
     }
 
     @FXML
-    void handleDragOver1(DragEvent event) {
+    void handleDragOverToDoItem(DragEvent event) {
         System.out.println("drag over!");
         if (event.getGestureSource() == milkLabel) {
             System.out.println("milk over!");
@@ -84,7 +84,7 @@ public class LayoutFXMLController implements Initializable {
     }
 
     @FXML
-    void handleDroppedOn1(DragEvent event) {
+    void handleDroppedOnToDoItem(DragEvent event) {
         Label targetLabel = null;
         System.out.println("1 drag dropped!" + event.getGestureTarget() + event.getGestureTarget().getClass());
 
