@@ -63,8 +63,7 @@ public class LayoutFXMLController implements Initializable {
         Label sourceLabel = null;
         if (event.getSource() instanceof Label) {
             sourceLabel = (Label) (event.getSource());
-            System.out.println("You dragged me!");
-
+            
             Dragboard db = sourceLabel.startDragAndDrop(TransferMode.MOVE);
             ClipboardContent cbContent = new ClipboardContent();
             cbContent.putString(sourceLabel.getText());
@@ -76,12 +75,9 @@ public class LayoutFXMLController implements Initializable {
 
     @FXML
     void handleDragOverToDoItem(DragEvent event) {
-        System.out.println("drag over!");
         if (event.getGestureSource() == milkLabel) {
-            System.out.println("milk over!");
             event.acceptTransferModes(TransferMode.MOVE);
         } else {
-            System.out.println("non-milk over!");
             event.acceptTransferModes(TransferMode.MOVE);
         }
         event.consume();
@@ -90,13 +86,10 @@ public class LayoutFXMLController implements Initializable {
     @FXML
     void handleDroppedOnToDoItem(DragEvent event) {
         Label targetLabel = null;
-        System.out.println("1 drag dropped!" + event.getGestureTarget() + event.getGestureTarget().getClass());
 
-        //if (true) {
         if (event.getGestureTarget() instanceof Label) {
             targetLabel = (Label) (event.getGestureTarget());
 
-            System.out.println("drag dropped!");
             targetLabel.setText("full");
             Dragboard db = event.getDragboard();
             if (db.hasString()) {
@@ -119,11 +112,8 @@ public class LayoutFXMLController implements Initializable {
         }
     }
 
-
     @FXML
     void handleTaskDragDone(DragEvent event) {
-        System.out.println("drag done!");
-
         if (event.getTransferMode() == TransferMode.MOVE) {
             Label sourceLabel = null;
             if (event.getSource() instanceof Label) {
@@ -131,7 +121,6 @@ public class LayoutFXMLController implements Initializable {
                 sourceLabel.setText("________");
             }
         }
-
     }
 
     /**
