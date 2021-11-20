@@ -24,20 +24,6 @@
                   </MenuItem>
                </items>
             </Menu>
-            <Menu mnemonicParsing="false" text="Edit">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Undo">
-                     <accelerator>
-                        <KeyCodeCombination alt="UP" code="Z" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
-                     </accelerator>
-                  </MenuItem>
-                  <MenuItem mnemonicParsing="false" text="Redo">
-                     <accelerator>
-                        <KeyCodeCombination alt="UP" code="Y" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
-                     </accelerator>
-                  </MenuItem>
-               </items>
-            </Menu>
             <Menu mnemonicParsing="false" text="Help">
                <items>
                   <MenuItem mnemonicParsing="false" text="Help">
@@ -55,10 +41,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="milkLabel" layoutX="261.0" layoutY="136.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Buy milk" />
-      <Label fx:id="dishesLabel" layoutX="261.0" layoutY="167.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Do the dishes" />
-      <Label fx:id="takeLabel" layoutX="261.0" layoutY="198.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Take out the rubbish bin" />
-      <Label fx:id="bringLabel" layoutX="261.0" layoutY="231.0" onDragDetected="#handleMilkDrag" onDragDone="#handleMilkDragDone" text="Bring in the rubbish bin" />
+      <Label fx:id="milkLabel" layoutX="261.0" layoutY="136.0" onDragDetected="#handleTaskDrag" onDragDone="#handleTaskDragDone" text="Buy milk" />
+      <Label fx:id="dishesLabel" layoutX="261.0" layoutY="167.0" onDragDetected="#handleTaskDrag" onDragDone="#handleTaskDragDone" text="Do the dishes" />
+      <Label fx:id="takeLabel" layoutX="261.0" layoutY="198.0" onDragDetected="#handleTaskDrag" onDragDone="#handleTaskDragDone" text="Take out the rubbish bin" />
+      <Label fx:id="bringLabel" layoutX="261.0" layoutY="231.0" onDragDetected="#handleTaskDrag" onDragDone="#handleTaskDragDone" text="Bring in the rubbish bin" />
       <Label layoutX="477.0" layoutY="94.0" text="To do">
          <font>
             <Font name="System Bold" size="18.0" />
