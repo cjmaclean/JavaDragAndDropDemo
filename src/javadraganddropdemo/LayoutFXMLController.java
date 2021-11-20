@@ -52,7 +52,11 @@ public class LayoutFXMLController implements Initializable {
 
 
 
-
+    @FXML
+    private void handleQuit(ActionEvent event) {
+        System.exit(0);
+    }
+    
     @FXML
     private void handleTaskDrag(MouseEvent event) {
 
